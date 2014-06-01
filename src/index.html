@@ -5,15 +5,29 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>Nanjing GDG DevFest 2014</title>
-
-	<link rel="stylesheet/less" href="assets/bs3/less/bootstrap.less">
-
-	<script src="assets/less-1.5.0.min.js"></script>
+	<link rel="stylesheet/less" type="text/css" href="assets/bs3/less/bootstrap.less">
+	<script type="text/javascript">
+    less = {
+        env: "development", // 或者"production"
+        async: false,       // 异步加载导入的文件
+        // fileAsync: false,   // 使用文件协议访问页面时异步加载导入的文件
+        // poll: 1000,         // 在监视模式下，每两次请求之间的时间间隔（ms）
+        // functions: {},      // user functions, keyed by name
+        // dumpLineNumbers: "comments", // 或者"mediaQuery"，或者"all"
+        // relativeUrls: false,// 是否调整相对路径
+                            // 如果为false，则url已经是相对入口less文件的
+                            // entry less file
+        // rootpath: ":/a.com/"// 添加到每个url开始处的路径
+    };
+</script>
+<script src="assets/less-1.5.0.min.js"></script>
+<link rel="stylesheet" href="style/devfest.css">
 </head>
 <body>
+
 	<!-- navbar -->
 	<nav class="navbar navbar-default" role="navigation">
-	  <div class="container-fluid">
+	  <div class="container">
 	    <!-- Brand and toggle get grouped for better mobile display -->
 	    <div class="navbar-header">
 	      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
@@ -22,13 +36,13 @@
 	        <span class="icon-bar"></span>
 	        <span class="icon-bar"></span>
 	      </button>
-	      <a class="navbar-brand" href="#">GDG Nanjing | DevFest</a>
+	      <a class="navbar-brand" href="#"><img src="img/NanjingGDG-logo.png" alt="GDG Nanjing | DevFest"><strong>Dev<span>Fest<span/></strong></a>
 	    </div>
 
 	    <!-- Collect the nav links, forms, and other content for toggling -->
 	    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
 	      <ul class="nav navbar-nav navbar-right">
-	        <li><a href="#">免费报名</a></li>
+	        <li class="active hot"><a href="#">免费报名</a></li>
 	        <li><a href="#">大会流程</a></li>
 	        <li><a href="#">嘉宾介绍</a></li>
 	        <li><a href="#">GDG&DevFest</a></li>
@@ -39,21 +53,109 @@
 	<!-- ./navbar -->
 
 	<!-- welcome -->
+	<div class="jumbotron">
+		<div class="container">
+			<h1>南京开发者的节日</h1>
+			<h2>Nanjing GDG DevFest 2014</h2>
+			<h3>2014年9月20日</h3>
+		</div>
+	</div>
 	<!-- ./welcome -->
 
 	<!-- banner -->
+	<div class="jumbotron ">
+		<div class="container">
+			<h1>我们一起学习</h1>
+		</div>
+	</div>
 	<!-- ./banner -->
 	
 	<!-- feature -->
+	<div class="container feature">
+		<div class="row">
+			<div class="col-md-6">
+				<h1>技术大牛的纯干货分享</h1>
+				<p>
+					为期1天，high到爆的技术沙龙，在这里你可以获取
+					最新的技术干货，听业内大牛分享自己的知识、经验
+					和见解，你的身旁将会涌现出很多志同道合的朋友，大家
+					一起玩技术，聊技术，一起high~！
+				</p>
+			</div>
+			<div class="col-md-6">
+				<ul class="list-group">
+					<li class="list-group-item">
+						<h3>专场分享</h3>
+						<p>
+							专注于各个领域的技术专家带来的专题分享，你可以获取时下最新潮的技术。
+						</p>
+					</li>
+					<li class="list-group-item">
+						<h3>专场分享</h3>
+						<p>
+							专注于各个领域的技术专家带来的专题分享，你可以获取时下最新潮的技术。
+						</p>
+					</li>
+					<li class="list-group-item">
+						<h3>专场分享</h3>
+						<p>
+							专注于各个领域的技术专家带来的专题分享，你可以获取时下最新潮的技术。
+						</p>
+					</li>
+					<li class="list-group-item">
+						<h3>专场分享</h3>
+						<p>
+							专注于各个领域的技术专家带来的专题分享，你可以获取时下最新潮的技术。
+						</p>
+					</li>
+				</ul>
+			</div>
+		</div>
+		
+	</div>
 	<!-- ./feature -->
 
 	<!-- mapctn -->
+	<div id="J_map">
+		
+	</div>
 	<!-- ./mapctn -->
 
 	<!-- looking-forward -->
+	<div class="jumbotron">
+		<div class="container">
+			<h1>期待你的加入</h1>
+			<p>就在南京大学鼓楼校区，某地点</p>
+		</div>
+	</div>
 	<!-- ./looking-forward -->
 
 	<!-- footer -->
+	<footer class="footer">
+		<div class="container">
+			<div class="row">
+				<div class="col-xs-7">
+					<ul>
+						<li><a href="#">微博</a></li>
+						<li><a href="#">G+</a></li>
+						<li><a href="#">官方网站</a></li>
+						<li>
+							<img src="img/wechat.jpg" alt="">
+						</li>
+					</ul>
+					<p>
+						&copy;2014 Nanjing GDG.
+					</p>
+				</div>
+				<div class="col-xs-5 tr">
+					<div class="footer-brand">
+						<img src="img/NanjingGDG-logo.png" alt="">
+					</div>
+				</div>
+			</div>
+		</div>
+	</footer>
 	<!-- ./footer -->
+
 </body>
 </html>
