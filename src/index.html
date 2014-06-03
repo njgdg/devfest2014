@@ -53,79 +53,92 @@
 	<!-- ./navbar -->
 
 	<!-- welcome -->
-	<div class="jumbotron">
+	<div class="banner welcome-banner">
 		<div class="container">
-			<h1>南京开发者的节日</h1>
-			<h2>Nanjing GDG DevFest 2014</h2>
-			<h3>2014年9月20日</h3>
+			<div class="ctn">
+				<h1>南京开发者的节日</h1>
+				<p>Nanjing GDG DevFest 2014</p>
+				<p>2014年9月20日</p>
+			</div>
 		</div>
 	</div>
 	<!-- ./welcome -->
 
 	<!-- banner -->
-	<div class="jumbotron ">
+	<div class="banner slogen-banner">
 		<div class="container">
-			<h1>我们一起学习</h1>
+			<div class="ctn">
+				<h1 class="tc">let's <span class="type-wrap"><span id="J_sloganArea">have fun!</span></span></h1>
+			</div>
 		</div>
 	</div>
 	<!-- ./banner -->
 	
 	<!-- feature -->
-	<div class="container feature">
-		<div class="row">
-			<div class="col-md-6">
-				<h1>技术大牛的纯干货分享</h1>
-				<p>
-					为期1天，high到爆的技术沙龙，在这里你可以获取
-					最新的技术干货，听业内大牛分享自己的知识、经验
-					和见解，你的身旁将会涌现出很多志同道合的朋友，大家
-					一起玩技术，聊技术，一起high~！
-				</p>
-			</div>
-			<div class="col-md-6">
-				<ul class="list-group">
-					<li class="list-group-item">
-						<h3>专场分享</h3>
-						<p>
-							专注于各个领域的技术专家带来的专题分享，你可以获取时下最新潮的技术。
-						</p>
-					</li>
-					<li class="list-group-item">
-						<h3>专场分享</h3>
-						<p>
-							专注于各个领域的技术专家带来的专题分享，你可以获取时下最新潮的技术。
-						</p>
-					</li>
-					<li class="list-group-item">
-						<h3>专场分享</h3>
-						<p>
-							专注于各个领域的技术专家带来的专题分享，你可以获取时下最新潮的技术。
-						</p>
-					</li>
-					<li class="list-group-item">
-						<h3>专场分享</h3>
-						<p>
-							专注于各个领域的技术专家带来的专题分享，你可以获取时下最新潮的技术。
-						</p>
-					</li>
-				</ul>
+	<div class="feature">
+		<div class="container">
+			<div class="row">
+				<div class="col-sm-5">
+					<h1>技术大牛的纯干货分享</h1>
+					<p class="desc">
+						为期1天，high到爆的技术沙龙，在这里你可以获取
+						最新的技术干货，听业内大牛分享自己的知识、经验
+						和见解，你的身旁将会涌现出很多志同道合的朋友，大家
+						一起玩技术，聊技术，一起high~！
+					</p>
+				</div>
+				<div class="col-sm-7">
+					<ul class="list-group">
+						<li class="list-group-item clearfix">
+							<img src="../img/keynote.jpg" alt="">
+							<div>
+							<h3>专场分享</h3>
+							<p>
+								专注于各个领域的技术专家带来的专题分享，你可以获取时下最新潮的技术。
+							</p></div>
+						</li>
+						<li class="list-group-item clearfix">
+							<img src="../img/sessions.jpg" alt="">
+							<div><h3>开放式讨论</h3>
+							<p>
+								找到与你有着相同技术方向的人进行讨论，或者你需要一对一的经验指导等。
+							</p></div>
+						</li>
+						<li class="list-group-item clearfix">
+							<img src="../img/sandbox.jpg" alt="">
+							<div><h3>Code Lab</h3>
+							<p>
+								拟定一个有趣的主题，进行现场即兴编程，将你的代码和其他朋友的进行交换评价。
+							</p></div>
+						</li>
+						<li class="list-group-item clearfix">
+							<img src="../img/after-hours.jpg" alt="">
+							<div><h3>愉快的茶歇</h3>
+							<p>
+								学累了，玩累了，没关系，我们还为大家准备了丰富可口的餐饮作为茶歇。免费的！
+							</p></div>
+						</li>
+					</ul>
+				</div>
 			</div>
 		</div>
-		
 	</div>
 	<!-- ./feature -->
 
 	<!-- mapctn -->
-	<div id="J_map">
+	<div id="J_map" class="banner map-ctn">
 		
 	</div>
 	<!-- ./mapctn -->
 
 	<!-- looking-forward -->
-	<div class="jumbotron">
+	<div class="banner looking-banner">
 		<div class="container">
 			<h1>期待你的加入</h1>
 			<p>就在南京大学鼓楼校区，某地点</p>
+			<div class="tc">
+				<img src="img/logo-bottom.png" alt="">
+			</div>
 		</div>
 	</div>
 	<!-- ./looking-forward -->
@@ -156,6 +169,8 @@
 		</div>
 	</footer>
 	<!-- ./footer -->
-
+	
+	<script src="http://api.map.baidu.com/api?v=1.0&ak=0RoPs2PERfeEIR4pS0zKbRo4&type=quick" type="text/javascript"></script>
+	<script src="script/devfest.js"></script>
 </body>
 </html>
