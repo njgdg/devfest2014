@@ -58,19 +58,20 @@
   var sloganArea = new InputArea('J_sloganArea');
   sloganArea.run(['have fun!', 'coding!', 'rocking!']);
 
-  var map = new BMap.Map('J_map');
-  map.centerAndZoom(new BMap.Point(118.819224, 31.950503), 32);
-  var marker = new BMap.Marker(new BMap.Point(118.819224, 31.950503));
-  map.addOverlay(marker);
-  var opts = {
-    width: 220, // 信息窗口宽度      
-    height: 60, // 信息窗口高度      
-    title: "南京GDG DevFest 2014" // 信息窗口标题     
-  }
-  var infoWindow = new BMap.InfoWindow('<div style="font-size: 12px">地址：南京市鼓楼区南京大学 <br />电话：18260008278</div>', opts); // 创建信息窗口对象      
 
-  marker.addEventListener('click', function() {
-    map.openInfoWindow(infoWindow, marker.getPosition()); // 打开信息窗口
-  });
+  // var map = new BMap.Map('J_map');
+  // map.centerAndZoom(new BMap.Point(118.819224, 31.950503), 32);
+  // var marker = new BMap.Marker(new BMap.Point(118.819224, 31.950503));
+  // map.addOverlay(marker);
+  // var opts = {
+  //   width: 220, // 信息窗口宽度      
+  //   height: 60, // 信息窗口高度      
+  //   title: "南京GDG DevFest 2014" // 信息窗口标题     
+  // }
+  // var infoWindow = new BMap.InfoWindow('<div style="font-size: 12px">地址：南京市鼓楼区南京大学 <br />电话：18260008278</div>', opts); // 创建信息窗口对象      
+
+  // marker.addEventListener('click', function() {
+  //   map.openInfoWindow(infoWindow, marker.getPosition()); // 打开信息窗口
+  // });
 
 }())
