@@ -2,13 +2,14 @@
 
   "use strict";
 
-  function loopWithPause(arr, func, time) {
+  function loopWithPause(arr, func, time, end) {
     if (!arr.length) {
       return;
     }
 
     function one(idx, arr) {
       if (idx === arr.length) {
+        end && end.call(null);
         return;
       } else {
         setTimeout(function() {
@@ -36,22 +37,26 @@
 
       var start = -1;
       var size = wordsArr.length - 1;
-      _.input(wordsArr[++start]);
-      _.inputing = setInterval(function() {
-        _.input(wordsArr[++start]);
-        if (start === size) {
-          start = -1;
-        }
-      }, 5000);
+      
+      function doInput(){
+        _.input(wordsArr[++start], function(){
+          if(start === size){
+            start = -1;
+          }
+          setTimeout(doInput, 5000);
+        });
+      }
+      
+      doInput();
     },
-    input: function(word) {
+    input: function(word, end) {
       this.dom.innerHTML = '';
       var _ = this;
       var chars = word.split('');
 
       loopWithPause(chars, function(i, item) {
         _.dom.innerHTML = _.dom.innerHTML + item;
-      }, 50);
+      }, 50, end);
     }
   }
 
