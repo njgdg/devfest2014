@@ -57,9 +57,9 @@ body{overflow-x:hidden;font-family: 'hyzw';font-size: 16px}
 	.footer-social a{width: 80px;height: 80px;line-height: 78px;margin:5px;}
 }
 @media (max-width: 720px){
-	.footer-wechat{float: none;margin:60px 0 20px 10px;}
+	.footer-wechat{float: none;margin:60px 0 20px 10px;position: relative;right: 0}
 	.footer-social{margin:20px 0 0 0;}
-	.footer-social a{width: 80px;height: 80px;line-height: 78px;margin:5px;}
+	.footer-social a{width: 76px;height: 76px;line-height: 76px;margin:3px;}
 }
 @media (max-width: 320px){
 	.footer-social{text-align: left;}
@@ -171,6 +171,12 @@ body{overflow-x:hidden;font-family: 'hyzw';font-size: 16px}
 	.event-chart .bar-6{top: 165px;}
 }
 
+@media screen and (max-width: 800px){
+	.schedule h2{font-size:26px;}
+	.schedule h3{font-size: 16px;}
+	.schedule p{font-size: 14px}
+}
+
 /* about */
 .about-banner{background:url(../img/ABOUT_02.jpg) center center no-repeat;height:400px;background-size: 100%;}
 .about{margin-top:3em;margin-bottom: 3em;}
@@ -186,16 +192,17 @@ body{overflow-x:hidden;font-family: 'hyzw';font-size: 16px}
 .join-banner{background:url(../img/join_02.jpg) center center no-repeat;height:500px;background-size: 100%;}
 .join-banner .ctn{position:absolute;bottom: 20px;}
 .join-banner .ctn h1{color:#fff;font-size: 3em;line-height: 60px;}
-@media screen and (max-width: 580px) {
-	.join-banner .ctn{position:static;}
-	.join-banner .ctn h1{font-size: 2em;line-height: 40px;}
-}
 .join h1{border-bottom: 2px solid #f52c44;padding: .5em 1em}
 .join{margin-top: 30px;margin-bottom: 30px}
-form{margin-bottom: 50px}
-form select{padding: .5em .2em;}
-form select option{padding:1em;display: block;}
-form p{border-bottom: 1px solid #eee;padding:2em 5em;color:#999;margin-bottom: 50px}
+@media screen and (max-width: 580px) {
+	.join-banner .ctn{position:static;}
+	.join-banner .ctn h1{font-size: 1.8em;line-height: 40px;padding: .5em 0;text-align: left;}
+	.join h1{padding: .5em 0;text-align: center;}
+}
+.join form{margin-bottom: 50px}
+.join form select{padding: .5em .2em;}
+.join form select option{padding:1em;display: block;}
+.join form p{border-bottom: 1px solid #eee;padding:2em 0;color:#999;margin-bottom: 50px}
 
 /* guest-banner */
 .guest-banner{background:url(../img/GUESTS_02.jpg) center center no-repeat;height:500px;background-size: 100%;}

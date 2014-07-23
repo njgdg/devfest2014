@@ -14,6 +14,4 @@
   }
   setBannerHeight();
   $(window).resize(setBannerHeight);
-
-
 }())
