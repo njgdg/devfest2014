@@ -15,6 +15,6 @@
     "grunt-contrib-copy": "~0.5.0",
     "grunt-contrib-concat": "",
     "grunt-processhtml": "",
-    "grunt-contrib-less" : ""
+    "grunt-contrib-less": ""
   }
 }
