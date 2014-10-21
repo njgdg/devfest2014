@@ -9,21 +9,21 @@ module.exports = function(grunt) {
     // Task configuration.
     concat: {
       js: {
-        src: ['temp/md5.min.js', 'src/lib/jquery-2.1.0.min.js', 'src/bs3/js/bootstrap.min.js','temp/sngame-<%= pkg.version %>.min.js'],
+        src: ['temp/md5.min.js', 'devfest/lib/jquery-2.1.0.min.js', 'devfest/bs3/js/bootstrap.min.js','temp/sngame-<%= pkg.version %>.min.js'],
         dest: 'build/all.js'
       },
     },
     uglify: {
       js: {
         files:{
-          'temp/sngame-<%=pkg.version%>.min.js' : 'src/sngame.js',
-          'temp/md5.min.js' : 'src/lib/md5.js'
+          'temp/sngame-<%=pkg.version%>.min.js' : 'devfest/sngame.js',
+          'temp/md5.min.js' : 'devfest/lib/md5.js'
         }
       }
     },
     cssmin: {
       minify: {
-        src: ['src/index.css'],
+        src: ['devfest/index.css'],
         dest: 'temp/index-<%=pkg.version%>.min.css'
       }
     },
@@ -35,20 +35,20 @@ module.exports = function(grunt) {
         src: 'Gruntfile.js'
       },
       src: {
-        src : ['src/**/*.js']
+        src : ['devfest/**/*.js']
       }
     },
     processhtml: {
       dist: {
         files: {
-          'build/index.html' : 'src/index.html'
+          'build/index.html' : 'devfest/index.html'
         }
       }
     },
     watch: {
       livereload: {
         options: {livereload: true},
-        files: ['src/**/*.js', 'src/index.html', 'src/**/*.less'],
+        files: ['devfest/**/*.js', 'devfest/index.html', 'devfest/**/*.less'],
         tasks: ['less:development']
       }
     },
@@ -64,9 +64,9 @@ module.exports = function(grunt) {
     },
     less: {
       development: {
-        path : 'src/styles/',
+        path : 'devfest/styles/',
         files: {
-          "src/styles/style.css": "src/styles/style.less"
+          "devfest/styles/style.css": "devfest/styles/style.less"
         }
       }
     }
